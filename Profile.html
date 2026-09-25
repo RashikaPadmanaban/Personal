@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rashika Padmanaban, Product Manager</title>
+<meta name="description" content="Product Manager in B2B SaaS and HR-tech. Launched GPS Live Tracking and Timesheets at greytHR.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+<style>
+:root{
+  --bg:#ffffff; --surface:#FAF8F2; --cream-2:#FAF8F2; --cream-3:#FAF8F2;
+  --ink:#171B2E; --ink-2:color-mix(in srgb,#171B2E 68%,#ffffff); --line:color-mix(in srgb,#171B2E 12%,#ffffff);
+  --cobalt:#3155D9; --cobalt-deep:color-mix(in srgb,#3155D9 80%,#171B2E); --cobalt-tint:#DCE4FF; --on-cobalt:#FAF8F2;
+  --radius-l:30px; --radius-m:22px;
+  --max:1120px;
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Inter","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#171B2E; --surface:color-mix(in srgb,#171B2E 90%,#FAF8F2); --cream-2:color-mix(in srgb,#171B2E 86%,#FAF8F2); --cream-3:color-mix(in srgb,#171B2E 86%,#FAF8F2);
+    --ink:#FAF8F2; --ink-2:color-mix(in srgb,#FAF8F2 70%,#171B2E); --line:color-mix(in srgb,#FAF8F2 14%,#171B2E);
+    --cobalt:#DCE4FF; --cobalt-deep:#3155D9; --cobalt-tint:color-mix(in srgb,#3155D9 35%,#171B2E); --on-cobalt:#171B2E;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#171B2E; --surface:color-mix(in srgb,#171B2E 90%,#FAF8F2); --cream-2:color-mix(in srgb,#171B2E 86%,#FAF8F2); --cream-3:color-mix(in srgb,#171B2E 86%,#FAF8F2);
+  --ink:#FAF8F2; --ink-2:color-mix(in srgb,#FAF8F2 70%,#171B2E); --line:color-mix(in srgb,#FAF8F2 14%,#171B2E);
+  --cobalt:#DCE4FF; --cobalt-deep:#3155D9; --cobalt-tint:color-mix(in srgb,#3155D9 35%,#171B2E); --on-cobalt:#171B2E;
+}
+*,*::before,*::after{box-sizing:inherit;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px;border-radius:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+@media (max-width:640px){.wrap{padding:0 20px}}
+
+/* Nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;
+  background:color-mix(in srgb,var(--bg) 82%,transparent);
+  backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);
+  border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+nav .name{font-weight:600;font-size:15px;text-decoration:none}
+nav ul{display:flex;gap:32px;list-style:none}
+nav ul a{font-size:14px;color:var(--ink-2);text-decoration:none}
+nav ul a:hover{color:var(--cobalt)}
+@media (max-width:640px){nav ul li:not(:last-child){display:none}}
+
+/* Hero */
+.hero{padding:140px 0 120px}
+.hero h1{font-size:clamp(52px,9vw,108px);font-weight:700;letter-spacing:-.045em;line-height:1}
+.hero h1 span{display:block;color:var(--cobalt)}
+.hero .role{margin-top:40px;font-size:clamp(22px,2.6vw,30px);font-weight:600;letter-spacing:-.02em}
+.hero .lede{margin-top:20px;font-size:19px;line-height:1.65;color:var(--ink-2);max-width:60ch}
+.ctas{margin-top:44px;display:flex;flex-wrap:wrap;gap:16px}
+.btn{display:inline-flex;align-items:center;height:50px;padding:0 28px;border-radius:999px;font-size:16px;font-weight:500;text-decoration:none;transition:transform .15s ease,background .15s ease}
+.btn:active{transform:scale(.97)}
+.btn.primary{background:var(--cobalt);color:var(--on-cobalt)}
+.btn.primary:hover{background:var(--cobalt-deep)}
+.btn.ghost{background:var(--surface);border:1px solid var(--line)}
+.btn.ghost:hover{background:var(--cream-2)}
+.hero > *{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero .role{animation-delay:.12s}.hero .lede{animation-delay:.2s}.hero .ctas{animation-delay:.28s}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+/* Sections */
+section{padding:112px 0}
+@media (max-width:640px){section{padding:80px 0}.hero{padding:96px 0 80px}}
+.section-head{margin-bottom:56px;max-width:660px}
+.section-head h2{font-size:clamp(36px,5vw,54px);font-weight:700;letter-spacing:-.035em;line-height:1.08}
+.section-head p{margin-top:16px;color:var(--ink-2);font-size:19px}
+
+/* Showcase */
+.showcase{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.tile{border-radius:var(--radius-l);padding:44px 44px 48px;display:flex;flex-direction:column;align-items:flex-start;gap:0;min-height:260px;background:var(--surface);border:1px solid var(--line);color:var(--ink)}
+.tile .tag{margin-bottom:28px}
+.tile h3{font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:1.2}
+.tile p{margin-top:16px;max-width:46ch;line-height:1.65;color:var(--ink-2)}
+.tag{font-size:13px;font-weight:600;padding:7px 16px;border-radius:999px;border:1px solid var(--cobalt);color:var(--cobalt)}
+.tag.launch{background:var(--cobalt);color:var(--on-cobalt);border-color:var(--cobalt)}
+.tile.cobalt{background:var(--cobalt);border-color:var(--cobalt);color:var(--on-cobalt)}
+.tile.cobalt p{color:color-mix(in srgb,var(--on-cobalt) 85%,transparent)}
+.tile.cobalt .tag.launch{background:var(--on-cobalt);color:var(--cobalt);border-color:var(--on-cobalt)}
+.tile.tint{background:var(--cobalt-tint);border-color:transparent}
+.tile.cream{background:var(--cream-2);border-color:transparent}
+.tile.big{grid-column:span 6;min-height:340px;justify-content:center;padding:64px 56px}
+.tile.big h3{font-size:clamp(38px,6vw,66px);letter-spacing:-.04em;line-height:1.05}
+.tile.big p{font-size:21px;margin-top:20px}
+.tile.half{grid-column:span 3}
+.tile.third{grid-column:span 2;min-height:240px;padding:36px 36px 40px}
+.tile.third .tag{margin-bottom:24px}
+.tile.third h3{font-size:22px}
+.tile.third p{margin-top:14px}
+@media (max-width:900px){
+  .tile.half,.tile.third{grid-column:span 6}
+  .tile,.tile.third{padding:32px 30px 36px;min-height:0}
+  .tile.big{padding:44px 32px}
+}
+
+/* Timeline */
+.timeline{list-style:none;border-left:2px solid var(--line);margin-left:8px}
+.job{position:relative;padding:0 0 72px 44px}
+.job:last-child{padding-bottom:0}
+.job::before{content:"";position:absolute;left:-9px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:2px solid var(--ink-2)}
+.job.current::before{background:var(--cobalt);border-color:var(--cobalt);box-shadow:0 0 0 6px var(--cobalt-tint)}
+.job .when{display:inline-block;font-size:13px;font-weight:500;color:var(--cobalt);background:var(--cobalt-tint);padding:4px 12px;border-radius:999px}
+.job h3{font-size:26px;font-weight:600;letter-spacing:-.02em;margin-top:14px}
+.job .where{color:var(--ink-2);margin-top:4px}
+.job ul{margin-top:20px;padding-left:20px;max-width:72ch;display:grid;gap:12px}
+.job ul li{padding-left:4px}
+.job ul li::marker{color:var(--cobalt)}
+.projects{margin-top:28px;padding:32px 36px;border-radius:var(--radius-m);background:var(--surface);border:1px solid var(--line);max-width:72ch}
+.projects h4{font-size:16px;font-weight:600;color:var(--cobalt)}
+.projects ul{margin-top:16px}
+@media (max-width:640px){.job{padding-left:28px}.projects{padding:24px}}
+
+/* Toolkit */
+.kit{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.kit-block{border-radius:var(--radius-m);padding:36px;background:var(--surface);border:1px solid var(--line)}
+.kit-block:nth-child(odd){background:var(--cream-2);border-color:transparent}
+.kit-block h3{font-size:18px;font-weight:600;margin-bottom:20px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none}
+.chips li{font-size:14px;padding:7px 16px;border-radius:999px;background:var(--cobalt-tint);color:var(--cobalt)}
+@media (max-width:760px){.kit{grid-template-columns:1fr}.kit-block{padding:28px}}
+
+/* Education */
+.edu{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.edu .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-m);padding:36px}
+.edu h3{font-size:20px;font-weight:600}
+.edu p{color:var(--ink-2);margin-top:10px}
+.edu .when{margin-top:18px;font-size:14px}
+@media (max-width:760px){.edu{grid-template-columns:1fr}.edu .card{padding:28px}}
+
+/* Contact */
+.contact{text-align:center;padding:140px 0}
+.contact-card{background:var(--cobalt);color:var(--on-cobalt);border-radius:40px;padding:88px 32px}
+.contact h2{font-size:clamp(40px,7vw,80px);font-weight:700;letter-spacing:-.045em;line-height:1.05}
+.contact p{color:color-mix(in srgb,var(--on-cobalt) 85%,transparent);font-size:19px;margin:24px auto 0;max-width:48ch}
+.contact .ctas{justify-content:center}
+.contact .btn.primary{background:var(--on-cobalt);color:var(--cobalt)}
+.contact .btn.ghost{background:transparent;color:var(--on-cobalt);border-color:color-mix(in srgb,var(--on-cobalt) 50%,transparent)}
+.contact .btn.ghost:hover{background:color-mix(in srgb,var(--on-cobalt) 12%,transparent)}
+footer{border-top:1px solid var(--line);padding:28px 0;font-size:13px;color:var(--ink-2)}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.theme-toggle{background:var(--surface);border:1px solid var(--line);color:var(--ink-2);border-radius:999px;padding:6px 14px;font:inherit;cursor:pointer}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="name" href="#top">Rashika Padmanaban</a>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#toolkit">Toolkit</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="top">
+  <header class="hero wrap">
+    <h1>Rashika<span>Padmanaban</span></h1>
+    <p class="role">Product manager in B2B SaaS and HR-tech.</p>
+    <p class="lede">I turn customer and market insights into shipped products. I've launched 0→1 products that opened new revenue and led a Leave &amp; Attendance module revamp, working end to end from discovery and PRDs through GTM.</p>
+    <div class="ctas">
+      <a class="btn primary" href="#work">See my work</a>
+      <a class="btn ghost" href="mailto:rashikaanitha@gmail.com">Email me</a>
+    </div>
+  </header>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What I've shipped</h2>
+        <p>Selected launches at greytHR (Greytip Software), 2024 to present.</p>
+      </div>
+
+      <div class="showcase">
+        <article class="tile big cobalt">
+          <span class="tag launch">0→1 launch</span>
+          <h3>GPS Live Tracking</h3>
+          <p>The fastest-monetising launch in the module.</p>
+        </article>
+
+        <article class="tile half tint">
+          <span class="tag launch">0→1 launch</span>
+          <h3>Timesheets</h3>
+          <p>Identified the gap through lost-deal analysis, then drove it from problem definition to MVP, recovering lost pipeline.</p>
+        </article>
+
+        <article class="tile half cream">
+          <span class="tag">Adoption</span>
+          <h3>Email-based approvals</h3>
+          <p>Approve leave and attendance straight from email. Adoption beat its target and approval time dropped.</p>
+        </article>
+
+        <article class="tile third cream">
+          <span class="tag">Revamp</span>
+          <h3>Leave &amp; Attendance</h3>
+          <p>Multiple attendance cycles, overstay tracking, a shift roster importer and a shift-change workflow that cut manual scheduling and dispute resolution time.</p>
+        </article>
+
+        <article class="tile third">
+          <span class="tag">Analytics</span>
+          <h3>Data-informed decisions</h3>
+          <p>Performance tracking in Superset, Amplitude and Google Analytics that increased product adoption.</p>
+        </article>
+
+        <article class="tile third tint">
+          <span class="tag">Self-service</span>
+          <h3>Knowledge base</h3>
+          <p>Beamer updates, FAQs and AppCues promotions that grew self-service KB usage.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p>From business analysis in airline tech to product management in HR-tech.</p>
+      </div>
+
+      <ol class="timeline" reversed>
+        <li class="job current">
+          <span class="when">Jul 2024 to present</span>
+          <h3>Associate Product Manager</h3>
+          <p class="where">Greytip Software (greytHR), Bangalore</p>
+          <ul>
+            <li>Ran product discovery through user interviews and surveys, and validated designs with users before committing to build.</li>
+            <li>Partnered with design, engineering and QA through detailed PRDs and user stories, then drove distribution and GTM for on-time launches.</li>
+            <li>Strengthened product competitiveness through ongoing market research and competitor analysis.</li>
+          </ul>
+        </li>
+
+        <li class="job">
+          <span class="when">Oct 2023 to Jul 2024</span>
+          <h3>Product Lead (Freelance)</h3>
+          <p class="where">Infispec Innovation, Hyderabad</p>
+          <ul>
+            <li>Delivered requirement analysis and documentation across the project lifecycle, supporting on-time delivery.</li>
+          </ul>
+        </li>
+
+        <li class="job">
+          <span class="when">Mar 2023 to Apr 2023</span>
+          <h3>Business Analyst (Freelance)</h3>
+          <p class="where">Unremot, Middletown, US</p>
+          <ul>
+            <li>Contributed to a remote-work management platform within a short-term engagement.</li>
+          </ul>
+          <div class="projects">
+            <h4>Projects</h4>
+            <ul>
+              <li><strong>GRT Verse Greta:</strong> designed a smooth, immersive virtual shopping experience for users new to VR.</li>
+              <li><strong>Circle of Trust, Unilever:</strong> built an immersive 3D experience in an enterprise metaverse for Unilever's Risk and Analysis team to engage stakeholders.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job">
+          <span class="when">Jun 2021 to Mar 2023</span>
+          <h3>Product Lead</h3>
+          <p class="where">Flynava Technologies, Bangalore</p>
+          <ul>
+            <li><strong>Jupiter:</strong> led development and launch of a pricing decision-support system, contributing to higher user retention and revenue growth.</li>
+            <li><strong>Akasa Air:</strong> managed the e-commerce Booking Module and ran API testing with Navitaire.</li>
+            <li><strong>Loyalty Caravan:</strong> oversaw the Manage Booking Module and performed API testing (Travelport, fares logic).</li>
+          </ul>
+          <div class="projects">
+            <h4>Business Analyst role</h4>
+            <ul>
+              <li>Applied BRD, FRD, PRD, PDD and MOM frameworks for client business analysis and process optimisation.</li>
+              <li><strong>Emirates (onsite support):</strong> supported automated rules filing for API categories, implemented the Rules Module and Rule Package, and improved transparency with Status and ATPCO dashboards.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="toolkit">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Toolkit</h2>
+        <p>The skills and tools I use day to day.</p>
+      </div>
+      <div class="kit">
+        <div class="kit-block">
+          <h3>Skills</h3>
+          <ul class="chips"><li>Product discovery</li><li>Roadmapping</li><li>Agile &amp; Scrum</li><li>A/B testing</li><li>Stakeholder management</li><li>Product lifecycle management</li></ul>
+        </div>
+        <div class="kit-block">
+          <h3>Product &amp; project management</h3>
+          <ul class="chips"><li>Jira</li><li>Aha!</li><li>OpenProject</li><li>Notion</li><li>Miro</li></ul>
+        </div>
+        <div class="kit-block">
+          <h3>Analytics &amp; data</h3>
+          <ul class="chips"><li>Superset</li><li>Amplitude</li><li>Google Analytics</li><li>Mixpanel</li><li>Tableau</li><li>Power BI</li><li>SQL</li><li>MongoDB</li></ul>
+        </div>
+        <div class="kit-block">
+          <h3>Design &amp; AI</h3>
+          <ul class="chips"><li>Figma</li><li>Figma Make</li><li>Lovable</li><li>Google AI Studio</li></ul>
+        </div>
+        <div class="kit-block">
+          <h3>Collaboration &amp; support</h3>
+          <ul class="chips"><li>Microsoft Teams</li><li>Slack</li><li>Zoom</li><li>Zendesk</li><li>Microsoft Office</li><li>Google Workspace</li></ul>
+        </div>
+        <div class="kit-block">
+          <h3>Certifications</h3>
+          <ul class="chips">
+            <li>Certified Scrum Product Owner (CSPO)</li>
+            <li>AI in Product Management</li>
+            <li>Become a 10X PM with ChatGPT &amp; Generative AI</li>
+            <li>MySQL for Data Analytics and BI</li>
+            <li>Jira Software Essentials</li>
+            <li>Product Management 101</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head"><h2>Education</h2></div>
+      <div class="edu">
+        <div class="card">
+          <h3>MBA, Business Analytics</h3>
+          <p>CMS Business School, Jain University, Bangalore</p>
+          <p class="when">Jul 2019 to May 2021</p>
+        </div>
+        <div class="card">
+          <h3>B.Sc., Computer Science</h3>
+          <p>Vellore Institute of Technology, Vellore</p>
+          <p class="when">Jul 2016 to May 2019</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="contact-card">
+        <h2>Let's talk product</h2>
+        <p>Based in Bengaluru. Open to conversations about B2B SaaS, HR-tech, workforce management and B2C.</p>
+        <div class="ctas">
+          <a class="btn primary" href="mailto:rashikaanitha@gmail.com">rashikaanitha@gmail.com</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/rashikapadmanaban" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> Rashika Padmanaban</span>
+    <button class="theme-toggle" id="themeBtn" type="button" aria-label="Switch colour theme">Switch theme</button>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+(function(){
+  var root = document.documentElement, key = 'rp-theme';
+  try { var saved = localStorage.getItem(key); if (saved) root.setAttribute('data-theme', saved); } catch(e){}
+  document.getElementById('themeBtn').addEventListener('click', function(){
+    var cur = root.getAttribute('data-theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    var next = cur === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem(key, next); } catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
